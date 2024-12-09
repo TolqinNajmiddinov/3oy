@@ -1,0 +1,30 @@
+main{
+    background-color: $green;
+    .main-title{
+        color: white;
+        h2{
+            font-family: $Raleway;
+            font-size: 46px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .boxs{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            margin-left: 120px;
+            h2{
+                font-family: $Raleway;
+                font-size: 24px;
+                font-weight: 500;
+                text-align: start;
+                &:nth-child(5){
+                    padding-right: 100px;
+                    img{
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

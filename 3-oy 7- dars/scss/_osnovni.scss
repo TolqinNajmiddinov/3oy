@@ -1,0 +1,192 @@
+.osnovni {
+    .title {
+      font-family: $Raleway;
+      font-size: 46px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+  
+      // Responsive: kichik ekranlar uchun font o'lchamini kamaytirish
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
+  
+      @media (max-width: 480px) {
+        font-size: 28px;
+      }
+    }
+  
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  
+      .card {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        // text-align: center;
+        transition: transform 0.3s;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+  
+        span {
+          display: block;
+          font-size: 24px;
+          font-family: $Raleway;
+          color: gray;
+          margin-bottom: 10px;
+  
+          @media (max-width: 480px) {
+            text-align: start;
+            font-size: 20px;
+          }
+        }
+  
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $Raleway;
+          color: $green;
+          margin-bottom: 15px;
+  
+          @media (max-width: 480px) {
+            font-size: 20px;
+          }
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          object-fit: cover;
+  
+          @media (max-width: 768px) {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  
+    // 640px da 2 ustunli ko'rinish
+    @media (max-width: 640px) {
+      .cards {
+        .card {
+          flex: 1 1 calc(50% - 20px); /* 2 ta kartani joylashtirish */
+          max-width: calc(50% - 20px); 
+        }
+      }
+    }
+  
+    // 480px da 1 ustunli ko'rinish
+    @media (max-width: 480px) {
+      .cards {
+        .card {
+          flex: 1 1 100%; /* 1 ta kartani joylashtirish */
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .osnovni{
+//     .title{
+//         font-family: $Raleway;
+//         font-size: 46px;
+//         font-weight: 600;
+//         text-align: center;
+
+//         @media (max-width: 768px) {
+//             font-size: 36px;
+//           }
+      
+//         @media (max-width: 480px) {
+//             font-size: 28px;
+//         }
+//     }
+//     .cards{
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+
+//         @media (max-width: 1024px) {
+//             grid-template-columns: repeat(2, 1fr); // 2 ustun
+//           }
+      
+//         @media (max-width: 768px) {
+//             grid-template-columns: 1fr; // 1 ustun
+//             gap: 15px;
+//         }
+//         .card{
+//             grid-column: 2;
+//             border-left: 1px solid gray;
+//             padding:0 30px;
+            
+//             span{
+//                 font-size: 24px;
+//                 font-family: $Raleway;
+//                 color: gray;
+
+//                 @media (max-width: 480px) {
+//                     font-size: 20px;
+//                   }
+//             }
+//             h2{
+//                 font-size: 24px;
+//                 font-weight: 600;
+//                 font-family: $Raleway;
+//                 color: $green;
+
+//                 @media (max-width: 480px) {
+//                     font-size: 20px;
+//                   }
+//             }
+//             img{
+//                 width: 365px;
+//                 height: 320px;
+
+//                 @media (max-width: 768px) {
+//                     width: 100%;
+//                     height: auto;
+//                 }
+//             }
+//         }
+//     }
+// }
